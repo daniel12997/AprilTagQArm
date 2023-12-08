@@ -1,0 +1,42 @@
+\documentclass[12pt, letterpage]{IEEEtran}
+%\usepackage[utf8]{inputenc}
+%\usepackage{listings}
+
+\usepackage{changes}
+\usepackage{listings}
+\usepackage{xcolor}   % for \textcolor
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+\usepackage{url}
+
+\title{Introduction to Robotics: Final Project}
+\author{Daniel Parker}
+\author{\IEEEauthorblockN{Collin Cutler, Daniel Parker}}
+\date{12/08/2023}
+
+\begin{document}
+\bstctlcite{Schwinge2010:Walfield2002}
+
+\maketitle 
+\pagenumbering{gobble}
+
+% Insert all the files that make up each section. Additional sections could be added.
+\input{0_abstract}
+\input{1_intro}
+\input{2_design}
+\input{3_Implementation}
+\input{4_Results}
+\input{5_Conclusion}
+
+\bibliography{library.bib}
+\bibliographystyle{IEEEtran}
+
+\input{6_Appendix}
+\end{document}
